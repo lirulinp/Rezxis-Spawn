@@ -9,7 +9,7 @@ public final class RezxisSpawn extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        System.out.println("RezxisSpawn has enabled!");
+        getLogger().info("RezxisSpawn has enabled!");
 
         getCommand("setspawn").setExecutor(new SetSpawnCMD(this));
         getCommand("spawn").setExecutor(new SpawnCMD(this));
@@ -19,7 +19,7 @@ public final class RezxisSpawn extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        System.out.println("RezxisSpawn has disabled!");
+        getLogger().info("RezxisSpawn has disabled!");
     }
 
     public void loadconfig() {
