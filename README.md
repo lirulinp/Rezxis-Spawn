@@ -1,3 +1,3 @@
 # Rezxis-Spawn
 誰でも書けるようなコードなので公開設定にしてます。
-まだ Join Spawn出来てません。
+クソ雑魚なのでまだJoin Spawn出来てません。
