@@ -24,7 +24,7 @@ public class SpawnCMD implements CommandExecutor {
                     player.teleport(location);
                     player.sendMessage(ChatColor.GREEN + "Spawn地点へテレポートしました");
                 } else {
-                    player.sendMessage(ChatColor.GOLD + "使用方法 :" + ChatColor.GREEN + "/spawn");
+                    player.sendMessage(ChatColor.GOLD + "使用方法: " + ChatColor.GREEN + "/spawn");
                 }
             } else {
                 sender.sendMessage("コンソールからは使用できません");
