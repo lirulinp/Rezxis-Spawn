@@ -13,6 +13,7 @@ public class JoinEvent extends JavaPlugin {
     public JoinEvent(RezxisSpawn plugin) {
         this.plugin = plugin;
     }
+
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();

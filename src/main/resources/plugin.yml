@@ -2,7 +2,15 @@ name: Rezxis-Spawn
 version: ${project.version}
 main: mcms.pypj0208.rezxisspawn.RezxisSpawn
 authors: pypj0208
+description: Rezxis-Network Lobby plugin
 
 commands:
   setspawn:
+    description: Spawn地点をプレイヤーの現在地点に設定します
+    permission: rezxis.setspawn.use
   spawn:
+    description: Spawnへテレポートします
+permissions:
+  rezxis.setspawn.use:
+    description: Allows setspawn command
+    default: op
