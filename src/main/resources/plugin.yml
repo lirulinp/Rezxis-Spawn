@@ -1,0 +1,8 @@
+name: Rezxis-Spawn
+version: ${project.version}
+main: mcms.pypj0208.rezxisspawn.RezxisSpawn
+authors: pypj0208
+
+commands:
+  setspawn:
+  spawn:
