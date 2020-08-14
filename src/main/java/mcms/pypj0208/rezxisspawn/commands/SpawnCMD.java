@@ -1,6 +1,7 @@
 package mcms.pypj0208.rezxisspawn.commands;
 
 import mcms.pypj0208.rezxisspawn.RezxisSpawn;
+import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -21,9 +22,9 @@ public class SpawnCMD implements CommandExecutor {
                 if (args.length == 0) {
                     Location location = (Location) plugin.getConfig().get("Spawn.Location");
                     player.teleport(location);
-                    player.sendMessage("§aSpawn地点へテレポートしました");
+                    player.sendMessage(ChatColor.GREEN + "Spawn地点へテレポートしました");
                 } else {
-                    player.sendMessage("§c使用方法: §a/spawn");
+                    player.sendMessage(ChatColor.GOLD + "使用方法: §a/spawn");
                 }
             } else {
                 sender.sendMessage("コンソールからは使用できません");

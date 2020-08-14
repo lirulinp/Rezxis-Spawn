@@ -1,6 +1,7 @@
 package mcms.pypj0208.rezxisspawn.commands;
 
 import mcms.pypj0208.rezxisspawn.RezxisSpawn;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -24,15 +25,15 @@ public class SetSpawnCMD implements CommandExecutor{
                     plugin.getConfig().set("Spawn.Location", player.getLocation());
                     plugin.saveConfig();
                     plugin.loadconfig();
-                    player.sendMessage("§aSpawn地点を設定しました");
+                    player.sendMessage(ChatColor.GREEN + "Spawn地点を設定しました");
                 } else {
-                    player.sendMessage("§c使用方法: §a/setspawn");
+                    player.sendMessage(ChatColor.GOLD +  "使用方法: §a/setspawn");
                 }
             } else {
                 sender.sendMessage("コンソールからは使用できません");
             }
         } else {
-            player.sendMessage("§cこのコマンドを使用する権限がありません");
+            player.sendMessage(ChatColor.RED + "このコマンドを使用する権限がありません");
         }
         return false;
     }
