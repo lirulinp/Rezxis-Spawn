@@ -27,7 +27,7 @@ public class SetSpawnCMD implements CommandExecutor{
                     plugin.loadconfig();
                     player.sendMessage(ChatColor.GREEN + "Spawn地点を設定しました");
                 } else {
-                    player.sendMessage(ChatColor.GOLD +  "使用方法: §a/setspawn");
+                    player.sendMessage(ChatColor.GOLD + "使用方法: " + ChatColor.GREEN + "/setspawn");
                 }
             } else {
                 sender.sendMessage("コンソールからは使用できません");
