@@ -16,8 +16,6 @@ public class JoinEvent extends JavaPlugin {
 
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
-        Player player = event.getPlayer();
-        Location location = (Location) plugin.getConfig().get("Spawn.Location");
-        player.teleport(location);
+        event.getPlayer().teleport(event.getPlayer().getWorld().getSpawnLocation());
     }
 }
